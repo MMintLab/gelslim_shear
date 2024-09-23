@@ -5,6 +5,7 @@ Optical flow-based approximations of shear fields from RGB vision-based tactile 
 ![GIF of Shear Field Approximations](https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/shear_field_small_screw_head.gif?raw=true)
 
 For all functionality associated with the GelSlim 4.0, [visit the project website!](https://www.mmintlab.com/research/gelslim-4-0/)
+
 This repository is also used in [Built Different: Tactile Perception to Overcome Cross-Embodiment Capability Differences in Collaborative Manipulation](https://www.mmintlab.com/research/tactile-collaborative/).
 
 Tested On: <br />
