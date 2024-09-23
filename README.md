@@ -1,7 +1,7 @@
 # The GelSlim 4.0 Shear Field Package
 Optical flow-based approximations of shear fields from RGB vision-based tactile sensor GelSlim 4.0 <br />
-![GIF of Helmholtz Decomposition and Divergence and Curl](https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/decomposition_marker.gif?raw=true)
-![GIF of Time Derivative](https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/time_derivative_hex.gif?raw=true)<br />
+![GIF of Helmholtz Decomposition and Divergence and Curl](https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/decomposition_marker.gif?raw=true)<br />
+![GIF of Time Derivative](https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/time_derivative_hex.gif?raw=true)
 ![GIF of Shear Field Approximations](https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/shear_field_small_screw_head.gif?raw=true)
 
 For all functionality associated with the GelSlim 4.0, [visit the project website!](https://www.mmintlab.com/research/gelslim-4-0/)
