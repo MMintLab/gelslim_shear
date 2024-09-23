@@ -60,8 +60,8 @@ class ShearGenerator():
 
     def curl(self, u, v):
         #estimate the partial derivatives
-        dudy = torch.gradient(u, axis=0)
-        dvdx = torch.gradient(v, axis=1)
+        dudy = np.gradient(u, axis=0)
+        dvdx = np.gradient(v, axis=1)
         #estimate the curl
         curl = dvdx - dudy
         return curl
