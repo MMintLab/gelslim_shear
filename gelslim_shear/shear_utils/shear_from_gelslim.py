@@ -73,6 +73,17 @@ class ShearGenerator():
         #estimate the divergence
         divergence = dudx + dvdy
         return divergence
+    
+    def helmholtz_decomposition(self, u, v):
+        vfield = np.stack((u,v),axis=2)
+        self.nhhd.decompose(vfield)
+        solenoidal = self.nhhd.r
+        irrotational = self.nhhd.d
+        u_sol = solenoidal[:,:,0]
+        v_sol = solenoidal[:,:,1]
+        u_irr = irrotational[:,:,0]
+        v_irr = irrotational[:,:,1]
+        return u_sol, v_sol, u_irr, v_irr
 
     def sigmoid_weighting_function(self, x, midpoint, threshold):
         y = 1/(1+np.exp(-1*(x-midpoint)/threshold))
@@ -157,14 +168,7 @@ class ShearGenerator():
             curl_channel_index = self.channels.index('curl')
             self.shear_field_tensor[curl_channel_index] = torch.tensor(curl)
         if 'sol_u' in self.channels or 'sol_v' in self.channels or 'irr_u' in self.channels or 'irr_v' in self.channels:
-            vfield = np.stack((self.u,self.v),axis=2)
-            self.nhhd.decompose(vfield)
-            solenoidal = self.nhhd.r
-            irrotational = self.nhhd.d
-            u_sol = solenoidal[:,:,0]
-            v_sol = solenoidal[:,:,1]
-            u_irr = irrotational[:,:,0]
-            v_irr = irrotational[:,:,1]
+            u_sol, v_sol, u_irr, v_irr = self.helmholtz_decomposition(self.u, self.v)
             if 'sol_u' in self.channels:
                 sol_u_channel_index = self.channels.index('sol_u')
                 self.shear_field_tensor[sol_u_channel_index] = torch.tensor(u_sol)
