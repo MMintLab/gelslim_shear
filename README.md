@@ -164,3 +164,8 @@ plot_vector_field(ax[0], vf, title='Shear Field')
 plot_scalar_field(ax[1], sf, title='Divergence', cmap='PuOr')
 plt.show()
 ```
+
+The Result:
+<p align="center">
+  <img src="https://github.com/MMintLab/gelslim_shear/blob/master/media/images/plot_test.png?raw=true" alt="Plot Test"/>
+</p>
