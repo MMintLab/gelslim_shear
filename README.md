@@ -131,7 +131,7 @@ shplot = ShearPlotter(channels=shgen.channels)
 shplot.animate_shear_info([shear_field_tensor], update)
 ```
 
-The reason for `shear_field_tensor` being placed in a list is we allow for the plotting of multiple fingers simultaneously, by adding `shplot = ShearPlotter(num_fingers=2)` for example to the intialization of the plotter. Then you may have two `ShearGenerator`s being `shgen1` and `shgen2`, you can define `shear_field_tensors=[shgen1.get_shear_field(), shgen2.get_shear_field()]`.This coupled with the above code and `channels=['u','v','div','du','dv]` will produce a live animation of both fingers as follows:
+The reason for `shear_field_tensor` being placed in a list is we allow for the plotting of multiple fingers simultaneously, by adding `shplot = ShearPlotter(num_fingers=2)` for example to the intialization of the plotter. Then you may have two `ShearGenerator` defined as `shgen1` and `shgen2`, you can define `shear_field_tensors=[shgen1.get_shear_field(), shgen2.get_shear_field()]`.This coupled with the above code and `channels=['u','v','div','du','dv]` will produce a live animation of both fingers as follows:
 
 <p align="center">
   <img src="https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/animation.gif?raw=true" alt="GIF of Live Shear Animation"/>
