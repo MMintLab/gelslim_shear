@@ -128,7 +128,7 @@ shgen.update_tactile_image(tactile_image)
 shgen.update_shear()
 shear_field_tensor = shgen.get_shear_field()
 shplot = ShearPlotter(channels=shgen.channels)
-shplot.animate_shear_info([shear_field_tensosr], update)
+shplot.animate_shear_info([shear_field_tensor], update)
 ```
 
 The reason for `shear_field_tensor` being placed in a list is we allow for the plotting of multiple fingers simultaneously, by adding `shplot = ShearPlotter(num_fingers=2)` for example to the intialization of the plotter. This coupled with the above code and `channels=['u','v','div','du','dv]` will produce a live animation of both fingers as follows:
