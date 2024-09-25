@@ -134,7 +134,7 @@ shplot.animate_shear_info([shear_field_tensosr], update)
 The reason for `shear_field_tensor` being placed in a list is we allow for the plotting of multiple fingers simultaneously, by adding `shplot = ShearPlotter(num_fingers=2)` for example to the intialization of the plotter. This coupled with the above code and `channels=['u','v','div','du','dv]` will produce a live animation of both fingers as follows:
 
 <p align="center">
-  <img src="https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/animiation.gif?raw=true" alt="GIF of Live Shear Animation"/>
+  <img src="https://github.com/MMintLab/gelslim_shear/blob/master/media/animations/animation.gif?raw=true" alt="GIF of Live Shear Animation"/>
 </p>
 
 `ShearPlotter` also has more initialization arguments:
