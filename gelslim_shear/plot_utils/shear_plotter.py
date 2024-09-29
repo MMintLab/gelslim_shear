@@ -1,9 +1,4 @@
-import numpy as np
-
-from std_msgs.msg import *
-
 import matplotlib.pyplot as plt
-import numpy as np
 
 from typing import List
 
