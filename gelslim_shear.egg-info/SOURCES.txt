@@ -1,9 +1,0 @@
-README.md
-setup.py
-gelslim_shear/__init__.py
-gelslim_shear.egg-info/PKG-INFO
-gelslim_shear.egg-info/SOURCES.txt
-gelslim_shear.egg-info/dependency_links.txt
-gelslim_shear.egg-info/requires.txt
-gelslim_shear.egg-info/top_level.txt
-gelslim_shear/shear_utils/shear_from_gelslim.py
