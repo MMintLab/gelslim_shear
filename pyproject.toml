@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gelslim_shear"
+version = "0.0.1"
+description = "Gelslim tactile sensor shear field approximation via optical flow"
+readme = "README.md"
+dependencies = [
+    'numpy',
+    'torch',
+    'scipy',
+    'opencv-python',
+    'scikit-image',
+]
+
+# authors is a list of tables
+authors = [
+    { name = "WilliamvdB", email = "willvdb@umich.edu" },
+]
+
+# arbitrary labeled URLs (PEP 621)
+urls = { "Homepage" = "https://github.com/MMintLab/gelslim_shear" }
+
+[tool.setuptools.packages.find]
+include = ["gelslim_shear"]
